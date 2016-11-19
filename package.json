@@ -10,6 +10,7 @@
   "author": "Daichi Kimura <dkimura@bdd.xyz>",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^3.10.2",
     "webpack": "beta",
     "webpack-dev-server": "beta"
   }
