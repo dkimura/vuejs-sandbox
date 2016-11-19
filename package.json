@@ -8,5 +8,9 @@
     "type": "git"
   },
   "author": "Daichi Kimura <dkimura@bdd.xyz>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "beta",
+    "webpack-dev-server": "beta"
+  }
 }
