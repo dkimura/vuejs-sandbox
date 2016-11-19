@@ -1,0 +1,12 @@
+{
+  "name": "vuejs-sandbox",
+  "version": "0.0.0",
+  "description": "vuejs sandbox",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:dkimura/vuejs-sandbox.git",
+    "type": "git"
+  },
+  "author": "Daichi Kimura <dkimura@bdd.xyz>",
+  "license": "MIT"
+}
