@@ -17,7 +17,7 @@ build:
         HOME=$YARN_CACHE yarn
 
     - script:
-      name: build
+      name: test
       code: |
         yarn test
 
