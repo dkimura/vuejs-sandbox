@@ -2,7 +2,7 @@
 
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-TODO: Put more badges here.
+[![wercker status](https://app.wercker.com/status/29a98f2d75a2df6e726980511140cb5a/s/master "wercker status")](https://app.wercker.com/project/byKey/29a98f2d75a2df6e726980511140cb5a)
 
 > My Vue.js Sandbox
 
