@@ -1,16 +1,27 @@
-box: node
+box: node:6
 build:
   steps:
-    # A step that executes `npm install` command
-    - npm-install
-
-    # A step that executes `npm test` command
-    - npm-test
-
-    # A custom script step, name value is used in the UI
-    # and the code value contains the command that get executed
     - script:
-        name: echo nodejs information
-        code: |
-          echo "node version $(node -v) running"
-          echo "npm version $(npm -v) running"
+      name: install yarn
+      code: |
+        npm install -g yarn
+
+    - script:
+      name: set yarn cache
+      code: |
+        export YARN_CACHE=$WERCKER_CACHE_DIR/yarn
+
+    - script:
+      name: install dependencies
+      code: |
+        HOME=$YARN_CACHE yarn
+
+    - script:
+      name: build
+      code: |
+        yarn test
+
+    - script:
+      name: cleanup dev dependencies
+      code: |
+        HOME=$YARN_CACHE yarn --prod
