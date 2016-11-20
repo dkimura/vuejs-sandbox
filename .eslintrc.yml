@@ -1,5 +1,15 @@
+parser: babel-eslint
 extends: airbnb-base
+plugins:
+  - flowtype
+  - flowtype-errors
 rules:
   import/no-extraneous-dependencies:
     - error
     - devDependencies: true
+  flowtype/define-flow-type: 1
+  flowtype/use-flow-type: 1
+  flowtype/space-after-type-colon:
+    - 2
+    - always
+  flowtype-errors/show-errors: 2
