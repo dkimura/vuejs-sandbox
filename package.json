@@ -29,5 +29,8 @@
     "vue-loader": "^9.9.5",
     "webpack": "beta",
     "webpack-dev-server": "beta"
+  },
+  "dependencies": {
+    "vue": "^2.0.8"
   }
 }
