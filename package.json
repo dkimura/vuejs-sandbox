@@ -11,7 +11,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
-    "build": "webpack --progress --hide-modules --config build/webpack.config.production.js",
+    "build": "webpack --progress --hide-modules --config webpack.config.production.js",
     "lint": "eslint .",
     "test": "npm run lint",
     "start": "npm run dev"
