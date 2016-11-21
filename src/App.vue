@@ -1,5 +1,5 @@
-<template lang="jade">
-  h1 hello jade
+<template lang="pug">
+  h1.h1 hello Pug!!!
 </template>
 
 <script>
