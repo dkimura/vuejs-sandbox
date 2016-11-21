@@ -10,8 +10,11 @@
   "author": "Daichi Kimura <dkimura@bdd.xyz>",
   "license": "MIT",
   "scripts": {
+    "dev": "webpack-dev-server --inline --hot",
+    "build": "webpack --progress --hide-modules --config build/webpack.config.production.js",
     "lint": "eslint .",
-    "test": "npm run lint"
+    "test": "npm run lint",
+    "start": "npm run dev"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
