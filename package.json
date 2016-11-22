@@ -13,7 +13,8 @@
     "dev": "webpack-dev-server --inline --hot",
     "build": "webpack --progress --hide-modules --config webpack.config.production.js",
     "lint": "eslint .",
-    "test": "npm run lint",
+    "karma": "karma start",
+    "test": "npm run lint && npm run karma",
     "start": "npm run dev"
   },
   "devDependencies": {
