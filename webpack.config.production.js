@@ -40,10 +40,14 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.json/,
+        loader: 'json-loader',
+      },
     ],
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.json'],
   },
   devtool: '#source-map',
 };
