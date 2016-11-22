@@ -13,7 +13,7 @@ module.exports = {
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: 'production',
+        NODE_ENV: '"production"',
       },
     }),
     new webpack.optimize.UglifyJsPlugin({
@@ -40,10 +40,14 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.json/,
+        loader: 'json-loader',
+      },
     ],
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.json'],
   },
   devtool: '#source-map',
 };
