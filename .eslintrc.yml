@@ -15,3 +15,5 @@ rules:
     - 2
     - always
   flowtype-errors/show-errors: 2
+settings:
+  import/resolver: webpack

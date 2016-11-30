@@ -51,6 +51,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.json'],
+    modules: [
+      path.join(__dirname, 'src'),
+      'node_modules',
+    ],
   },
   devtool: '#source-map',
 };

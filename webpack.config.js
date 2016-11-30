@@ -38,7 +38,11 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.json'],
+    modules: [
+      path.join(__dirname, 'src'),
+      'node_modules',
+    ],
   },
   devServer: {
     historyApiFallback: true,
