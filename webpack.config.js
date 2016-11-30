@@ -28,13 +28,21 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.json/,
+        test: /\.css$/,
+        loader: 'style-loader!css-loader',
+      },
+      {
+        test: /\.json$/,
         loader: 'json-loader',
       },
     ],
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.json'],
+    modules: [
+      path.join(__dirname, 'src'),
+      'node_modules',
+    ],
   },
   devServer: {
     historyApiFallback: true,
