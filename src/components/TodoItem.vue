@@ -6,9 +6,3 @@
       button.destroy
     input.edit
 </template>
-
-<script>
-export default {
-  name: 'todo-item',
-}
-</script>

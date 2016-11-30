@@ -11,9 +11,3 @@
         a Completed
     button.clear-completed Clear completed
 </template>
-
-<script>
-export default {
-  name: 'todo-footer',
-}
-</script>

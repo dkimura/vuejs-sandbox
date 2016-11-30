@@ -6,7 +6,9 @@
 </template>
 
 <script>
+import TodoItem from 'components/TodoItem.vue';
+
 export default {
-  name: 'todo-list',
+  components: { TodoItem }
 }
 </script>

@@ -1,6 +1,6 @@
 import assert from 'power-assert';
 import Vue from 'vue';
-import App from '../src/App.vue';
+import App from 'containers/App.vue';
 
 describe('App.vue', () => {
   const vm = new Vue({
